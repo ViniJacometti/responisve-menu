@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: grid;
+    gap: 3rem;
+    background: linear-gradient(to right,red, yellow );    
+    margin: 0px;
+    margin-top: 3rem;
+    font-size: 1rem;
+    justify-items: center;
+}
+
+ul li{
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+h1{
+    font-size: 4rem;
+}
+
+.inicio{
+    text-align: center;
+}
+
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #ffff;
+    justify-items: center;
+    border: 2px solid #ffff;
+}
+
+.pratos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 2rem;
+    border-radius: 5px;
+    margin: 2rem;
+}
+
+.bebidas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.sobremesa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+article{
+    background: #ffff;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+article a{
+    padding: 10px 25px ;
+    background: rgb(239, 255, 11);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.rodape{
+    background: linear-gradient(to right, yellow, red);
+    text-align: center;
+    padding: 2rem;
+    width: 100%;    
+    box-sizing: border-box;
+}
+
+/*pseudo class*/
+article a:hover{
+    border: 2px solid rgb(255, 0, 0);
+}
+.menu a:hover{
+    border: 2px solid #000000;
+}
+
+/*Medias*/
+
+@media screen and (max-width: 585px){
+    
+    h1{
+        font-size: 3rem;
+    }
+
+    .menu{
+        text-align: center;
+        justify-content: center;
+        margin: 0px 3px;
+        padding: 3px;
+    }
+
+    .pratos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1200px;
+        gap: 2rem;
+        border-radius: 5px;
+        margin: 2rem;
+    }
+    .bebidas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1200px;
+        gap: 2rem;
+        border-radius: 5px;
+        margin: 2rem;
+    }
+    .sobremesa{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1200px;
+        gap: 2rem;
+        border-radius: 5px;
+        margin: 2rem;
+    }
+}
+
